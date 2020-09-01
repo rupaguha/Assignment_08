@@ -82,8 +82,7 @@ class FileIO:
         objFile.write(new_line)    
         objFile.close()
         print("Data saved!")
-        
-    pass
+    
 
 # -- PRESENTATION (Input/Output) -- #
 class IO:
