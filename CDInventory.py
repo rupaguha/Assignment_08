@@ -6,6 +6,7 @@
 # Rupa Guha, 2020-August-31, added code to create the CD class
 # Rupa Guha, 2020-August-31, added code for some of the methods in FileIO and IO classes as well as main body 
 # Rupa Guha, 2020-August-31, finished the rest of the code - IO class methods (add routines) and main body
+# Rupa Guha, 2020-September-1, documentation edits
 #------------------------------------------#
 
 # -- DATA -- #
@@ -86,7 +87,7 @@ class FileIO:
 
 # -- PRESENTATION (Input/Output) -- #
 class IO:
-    # TODO add docstring
+    # TODone add docstring
     """Displays data to the screen:
 
     properties: None
@@ -95,6 +96,7 @@ class IO:
         print_menu()
         menu_choice()
         show_inventory()
+        ask_user_data()
 
     """
     
