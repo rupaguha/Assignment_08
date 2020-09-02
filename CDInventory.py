@@ -28,9 +28,46 @@ class CD:
     
     def __init__(self,cd_id,cd_title,cd_artist):
          #-----Attributes-----
-        self.cd_id = cd_id
-        self.cd_title = cd_title
-        self.cd_artist = cd_artist
+        self.__cd_id = cd_id
+        self.__cd_title = cd_title
+        self.__cd_artist = cd_artist
+
+    #-------Properties-------
+    @property
+    def cd_id(self):
+        return self.__cd_id
+
+    @cd_id.setter
+    def cd_id(self, value):
+        if type(value) == int:
+            self.__cd_id = value
+        else:
+            raise Exception("ID needs to be numeric!")
+
+
+    @property
+    def cd_title(self):
+        return self.__cd_title
+
+    @cd_title.setter
+    def cd_title(self, value):
+        if type(value) == str:
+            self.__cd_title = value
+        else:
+            raise Exception("Title needs to be a string!")
+
+    @property
+    def cd_artist(self):
+        return self.__cd_artist
+
+    @cd_artist.setter
+    def cd_artist(self, value):
+        if type(value) == str:
+            self.__cd_artist = value
+        else:
+            raise Exception("Artist needs to be a string!")
+
+    
     
 
 # -- PROCESSING -- #
